@@ -11,6 +11,7 @@ const ignored = [
     ".git/**",
     ".npm/**",
     "node_modules/**",
+    "tools/start-local.ps1",
     "release/**",
     "*.zip",
     "*.log",

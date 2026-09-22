@@ -12,6 +12,7 @@ import { startTwitchWatcher } from "../services/twitch.js";
 import { startTwitchClipsWatcher } from "../services/twitchClips.js";
 import { announceTwitchEnd, announceTwitchLive } from "../services/liveAnnouncement.js";
 import { announceTwitchClip } from "../services/clipAnnouncement.js";
+import { checkOllama } from "../services/ollama.js";
 
 async function startIsolatedService(
   key: ServiceKey,
@@ -40,6 +41,7 @@ async function startIsolatedService(
 
 async function startExternalServices(client: Client): Promise<void> {
   await Promise.all([
+    startIsolatedService("ollama", () => checkOllama()),
     startIsolatedService("twitch", () => {
       void startTwitchWatcher({
         onStart: stream => announceTwitchLive(client, stream),

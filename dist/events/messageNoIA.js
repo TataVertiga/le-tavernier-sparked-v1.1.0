@@ -1,6 +1,7 @@
 import { Events } from "discord.js";
 import bank from "../data/tavernReplies.json" with { type: "json" };
 import { isMuted } from "../state/tavernierState.js";
+import { serviceReadiness } from "../core/config.js";
 const state = new Map();
 const HISTORY_SIZE = 8;
 function isTriggered(message) {
@@ -42,9 +43,11 @@ function pickFromCategory(category, conversation) {
 export function registerMessageNoIA(client) {
     client.on(Events.MessageCreate, async (message) => {
         try {
+            if (serviceReadiness("ollama").enabled)
+                return;
             if (message.author.bot || isMuted() || !isTriggered(message))
                 return;
-            const key = `${message.channel.id}:${message.author.id}`;
+            const key = message.channel.id + ":" + message.author.id;
             const conversation = state.get(key) ?? { lastIdx: {}, history: {} };
             const reply = pickFromCategory(detectCategory(message), conversation);
             state.set(key, conversation);

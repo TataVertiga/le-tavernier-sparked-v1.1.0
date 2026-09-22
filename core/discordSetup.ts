@@ -17,6 +17,7 @@ import { errorMessage, log } from "./logger.js";
 import registerGiveawayInteractions from "../events/giveawayInteractions.js";
 import registerMessageHello from "../events/messageHello.js";
 import { registerMessageNoIA } from "../events/messageNoIA.js";
+import { registerMessageAI } from "../events/messageAI.js";
 import registerTikTokAuto from "../events/tiktokAuto.js";
 
 type SlashCommand = {
@@ -98,10 +99,12 @@ const manuallyRegisteredEvents = new Set([
   "giveawayInteractions.js",
   "messageHello.js",
   "messageNoIA.js",
+  "messageAI.js",
   "tiktokAuto.js",
   "giveawayInteractions.ts",
   "messageHello.ts",
   "messageNoIA.ts",
+  "messageAI.ts",
   "tiktokAuto.ts",
 ]);
 
@@ -109,6 +112,7 @@ export function registerManualEvents(client: Client): void {
   registerGiveawayInteractions(client);
   registerMessageHello(client);
   registerMessageNoIA(client);
+  registerMessageAI(client);
   registerTikTokAuto(client);
 }
 

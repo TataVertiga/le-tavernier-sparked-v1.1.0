@@ -1,6 +1,7 @@
 import { Client, Events, Message } from "discord.js";
 import bank from "../data/tavernReplies.json" with { type: "json" };
 import { isMuted } from "../state/tavernierState.js";
+import { serviceReadiness } from "../core/config.js";
 
 type ThreadKey = string;
 type Category = "salut" | "insulte" | "bye" | "specialPing" | "random";
@@ -52,9 +53,10 @@ function pickFromCategory(category: Category, conversation: ConvState): string {
 export function registerMessageNoIA(client: Client): void {
   client.on(Events.MessageCreate, async (message: Message) => {
     try {
+      if (serviceReadiness("ollama").enabled) return;
       if (message.author.bot || isMuted() || !isTriggered(message)) return;
 
-      const key: ThreadKey = `${message.channel.id}:${message.author.id}`;
+      const key = message.channel.id + ":" + message.author.id;
       const conversation = state.get(key) ?? { lastIdx: {}, history: {} };
       const reply = pickFromCategory(detectCategory(message), conversation);
       state.set(key, conversation);

@@ -73,6 +73,20 @@ Le bot répond aux mentions avec sa banque locale `data/tavernReplies.json`, san
 
 Lire [DEPLOY-SPARKED.md](./DEPLOY-SPARKED.md) avant toute mise à jour. La procédure protège explicitement le giveaway en cours et les autres données vivantes.
 
+## Conversation locale avec Ollama
+
+L'intégration Ollama est désactivée par défaut. Elle est prévue pour le PC qui héberge le modèle ; laisse OLLAMA_ENABLED à false dans les variables de Sparked.
+
+Dans le fichier .env local, active OLLAMA_ENABLED, indique le nom installé dans OLLAMA_MODEL et garde OLLAMA_BASE_URL à http://127.0.0.1:11434. Si OLLAMA_CHANNEL_ID contient l'identifiant d'un salon, le Tavernier y répond aux messages ordinaires sans qu'on le mentionne. Sans salon dédié, il répond aux mentions et au mot-clé #noia.
+
+Le contexte de discussion est séparé par membre et par salon. Il garde au maximum les six derniers échanges, reste en mémoire vive, expire après quelques heures et n'est pas écrit dans les fichiers de données. Un redémarrage efface ce contexte.
+
+Une fois Ollama installé et le modèle téléchargé, lance tools/start-local.ps1 depuis PowerShell. Pour l'ouverture automatique, crée une tâche dans le Planificateur de tâches Windows, déclenchée à l'ouverture de session, qui lance powershell.exe avec les arguments -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File "C:\chemin\du\projet\tools\start-local.ps1". Le script attend jusqu'à deux minutes qu'Ollama réponde, démarre le bot même si Ollama n'est pas prêt, et écrit son journal dans logs/tavernier-local.log.
+
+Le script recompile le code avant chaque démarrage. Pour le premier essai, désactive les services de publication externes comme indiqué dans le guide DEPLOY-SPARKED.md. Ne lance pas le même bot Discord sur Sparked et sur le PC en même temps.
+
+Le modèle exact reste à choisir selon la mémoire et la carte graphique du PC.
+
 ## Services
 
 - Discord.js 14

@@ -7,6 +7,7 @@ import { errorMessage, log } from "./logger.js";
 import registerGiveawayInteractions from "../events/giveawayInteractions.js";
 import registerMessageHello from "../events/messageHello.js";
 import { registerMessageNoIA } from "../events/messageNoIA.js";
+import { registerMessageAI } from "../events/messageAI.js";
 import registerTikTokAuto from "../events/tiktokAuto.js";
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 async function moduleFiles(directory) {
@@ -77,16 +78,19 @@ const manuallyRegisteredEvents = new Set([
     "giveawayInteractions.js",
     "messageHello.js",
     "messageNoIA.js",
+    "messageAI.js",
     "tiktokAuto.js",
     "giveawayInteractions.ts",
     "messageHello.ts",
     "messageNoIA.ts",
+    "messageAI.ts",
     "tiktokAuto.ts",
 ]);
 export function registerManualEvents(client) {
     registerGiveawayInteractions(client);
     registerMessageHello(client);
     registerMessageNoIA(client);
+    registerMessageAI(client);
     registerTikTokAuto(client);
 }
 export async function loadEvents(client) {

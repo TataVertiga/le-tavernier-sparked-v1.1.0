@@ -52,6 +52,8 @@ Ouvrir `http://localhost:10000/health` puis tester `/ping` et `/bot status` dans
 
 ## 3. Mise à jour sur Sparked
 
+L'intégration Ollama est réservée au lancement local sur le PC. Laisse OLLAMA_ENABLED à false sur Sparked ; le ZIP de déploiement omet aussi le script local Windows.
+
 Faire cette opération après la fin du giveaway en cours.
 
 1. Télécharger une sauvegarde complète du serveur. Au minimum, conserver tout le dossier `data/`, notamment `data/giveaways.json` et `data/backups/`.

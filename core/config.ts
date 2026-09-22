@@ -31,6 +31,7 @@ export const discordIds = Object.freeze({
 
 export type ServiceKey =
   | "discord"
+  | "ollama"
   | "giveaways"
   | "twitch"
   | "twitter"
@@ -57,6 +58,11 @@ const definitions: Record<ServiceKey, ServiceDefinition> = {
     label: "Discord",
     required: ["DISCORD_TOKEN|TOKEN"],
     enabled: () => true,
+  },
+  ollama: {
+    label: "IA locale Ollama",
+    required: ["OLLAMA_MODEL"],
+    enabled: () => envFlag("OLLAMA_ENABLED", false),
   },
   giveaways: { label: "Giveaways", enabled: () => true },
   twitch: {
