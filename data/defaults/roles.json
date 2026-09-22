@@ -1,0 +1,86 @@
+{
+  "alertes": [
+    {
+      "id": "886760204853710918",
+      "name": "Cinéphile",
+      "emoji": "🎬",
+      "description": "Alertes films & séries"
+    },
+    {
+      "id": "881686006770851920",
+      "name": "YouTube",
+      "emoji": "▶️",
+      "description": "Nouvelles vidéos"
+    },
+    {
+      "id": "881684957548916827",
+      "name": "Discord",
+      "emoji": "💬",
+      "description": "Annonces de la taverne"
+    },
+    {
+      "id": "881684898732187668",
+      "name": "TikTok",
+      "emoji": "🎵",
+      "description": "Clips et shorts"
+    },
+    {
+      "id": "881684792058466354",
+      "name": "Twitch",
+      "emoji": "🟪",
+      "description": "Notification de live"
+    }
+  ],
+  "plateformes": [
+    {
+      "id": "881602928127909948",
+      "name": "PC",
+      "emoji": "🖥️",
+      "description": "Joue sur PC"
+    },
+    {
+      "id": "881603060022018090",
+      "name": "XBOX",
+      "emoji": "🟢",
+      "description": "Joue sur Xbox"
+    },
+    {
+      "id": "881602994485989457",
+      "name": "Switch",
+      "emoji": "🔴",
+      "description": "Joue sur Switch"
+    },
+    {
+      "id": "881602821433229364",
+      "name": "PlayStation",
+      "emoji": "🔵",
+      "description": "Joue sur PlayStation"
+    }
+  ],
+  "jeux": [
+    {
+      "id": "881602119285735464",
+      "name": "Fortnite",
+      "emoji": "🎯",
+      "description": "Construire, tirer, danser"
+    },
+    {
+      "id": "992830749432627320",
+      "name": "Fall Guys",
+      "emoji": "🤸",
+      "description": "Chutes contrôlées (ou pas)"
+    },
+    {
+      "id": "889465111583010839",
+      "name": "Minecraft",
+      "emoji": "⛏️",
+      "description": "Création & survie"
+    },
+    {
+      "id": "881602715506069575",
+      "name": "Call of Duty",
+      "emoji": "🎖️",
+      "description": "FPS & bagarre"
+    }
+  ]
+}

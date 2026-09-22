@@ -1,0 +1,26 @@
+{
+    "twitter": [
+        "🔴 En live maintenant ! 🎮 Viens dire bonjour 👉 {url} #TwitchFR #Live",
+        "On est en direct 🍻 Rejoins le tchat 👉 {url} #Gaming #TwitchFR",
+        "Je lance le live ! 🚀 Go go go 👉 {url} #Streamer #LiveFR",
+        "C’est parti pour le stream 🎯 {url} #Twitch #GamingCommunity"
+    ],
+    "facebook": [
+        "🔴 En live ! On papote & on chill 👉 {url}",
+        "On se retrouve en direct 🎥 Passe faire un coucou 👉 {url}",
+        "Je viens de lancer le live ! Rejoins-nous 👉 {url} #Live #TwitchFR",
+        "Live en cours 🍺 On t’attend 👉 {url} #Communauté #Gaming"
+    ],
+    "bluesky": [
+        "🔴 En live sur Twitch ! Viens dire bonjour 👉 {url} #TwitchFR #Live",
+        "C’est parti pour le stream 🎮 Rejoins le comptoir 👉 {url} #Gaming #Communauté",
+        "Live en cours 🍻 On t’attend 👉 {url} #TwitchFR #Streamer",
+        "On lance le live ! 🚀 Viens chiller 👉 {url} #Twitch #LiveNow"
+    ],
+    "threads": [
+        "🔴 En live sur Twitch ! Viens dire bonjour 👉 {url} #TwitchFR #Live",
+        "On est en direct ! 🎮 Rejoins-nous 👉 {url} #Gaming #Communauté",
+        "Live en cours 🍻 Passe faire coucou 👉 {url} #TwitchFR #Streamer",
+        "Go live ! 🚀 👉 {url} #Twitch #LiveNow"
+    ]
+}

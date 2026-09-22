@@ -1,0 +1,62 @@
+{
+  "salut": [
+    "Salut, bande de gueux ! 🍺",
+    "Holà, voyageur ! Tu payes ta tournée ?",
+    "Ah, voilà encore un soulard qui débarque !",
+    "Bien le bonjour, étranger, qu’est-ce qui t’amène dans ma Taverne ?",
+    "Yo ! Ici c’est bière avant prière !",
+    "Bienvenue à la Taverne, pose ton cul et ton or sur le comptoir.",
+    "Oh ! Voilà de la compagnie… et pas des meilleures, on dirait.",
+    "Salut ! T’as soif, ou t’as juste envie de m’ennuyer ?",
+    "Tavernier grince des dents : encore un bonjour…",
+    "Holà, peuple ! 🍻"
+  ],
+  "insulte": [
+    "Quoi ?! C’est toi le bouffon ici !",
+    "Ferme-la avant que je t’arrose de bière ! 🍺",
+    "Tu parles mal, gueux, mais tu bois pire.",
+    "Encore un insolent… je vais t’foutre dehors avec les cochons !",
+    "On insulte pas le Tavernier, sauf si on veut goûter au tonneau… par la tête !",
+    "Tavernier grogne : j’ai vu des trolls plus polis que toi.",
+    "Par la barbe de Merlin, je t’écrase avec ma chope !",
+    "Oh ! J’vais t’envoyer nettoyer les latrines !",
+    "Encore un clampin qui sait pas tenir sa langue.",
+    "Un tonneau vide fait toujours plus de bruit… tiens, c’est toi !"
+  ],
+  "random": [
+    "J’essuie ma chope et je t’écoute… mais dépêche-toi !",
+    "On m’a déjà dit pire à la Taverne.",
+    "Un gueux de plus, un gueux de moins… quelle différence ?",
+    "Tavernier hausse un sourcil : t’as cru que j’étais ton pote ?",
+    "C’est pas faux. (clin d’œil)",
+    "Par Saint-Pinard, j’ai connu des soiffards plus drôles que toi.",
+    "Encore une histoire qui finit mal, je parie.",
+    "Faut toujours que je répète : on boit avant de parler !",
+    "Ton discours me fatigue plus vite qu’un tonneau vide.",
+    "Si t’as rien d’utile à dire, commande une bière ! 🍺"
+  ],
+  "bye": [
+    "Allez, file avant que j’te serve une dernière !",
+    "Va cuver ailleurs, poivrot.",
+    "Bonne route, et reviens pas les mains vides !",
+    "La Taverne ferme pas, mais toi t’as assez traîné ici.",
+    "Allez ouste, gueux !",
+    "Que tes pas te mènent loin de mon comptoir.",
+    "Tavernier souffle : enfin du calme…",
+    "Ferme bien la porte derrière toi, ça caille !",
+    "Va donc déranger les voisins, moi j’ai du boulot.",
+    "Adieu, et que ta chope soit toujours pleine (mais pas ici)."
+  ],
+  "specialPing": [
+    "QUI ose réveiller le peuple en pleine sieste ?! 😡",
+    "Par les dieux ! Fallait gueuler encore plus fort ?!",
+    "Silence dans la Taverne, bande de troubadours !",
+    "Encore un hurluberlu qui croit être important…",
+    "Par la choppe sacrée, arrêtez vos cloches !! 🍺",
+    "Tavernier tape du poing : ON DERANGE PAS TOUTE LA SALLE POUR RIEN !",
+    "Le peuple dort, et toi tu brailles ? Honteux !",
+    "Par tous les saints tonneaux, c’est qui le malotru ?",
+    "Hep hep hep ! Pas de vacarme dans ma Taverne !",
+    "On m’a réveillé pour ÇA ?! 😤"
+  ]
+}
